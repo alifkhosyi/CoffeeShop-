@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    let onBoarding = true
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        if onBoarding {
+            OnBoardingPage()
+        } else {
+            LoginView()
+        }
     }
 }
 
